@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Burden of TB — Global, Regional & Kenya Perspectives</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind Config for custom theme extensions based on user color theme -->
     <script>
         tailwind.config = {
             theme: {
@@ -59,9 +57,7 @@
             }
         }
     </script>
-    <!-- FontAwesome for medical, data and interface icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
@@ -103,12 +99,10 @@
 </head>
 <body class="bg-tbOptimal-500 text-tbBurgundy-950 min-h-screen selection:bg-tbBurgundy-950 selection:text-white">
 
-    <!-- Navigation Header -->
     <header class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-tbBurgundy-950/10 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center p-1 shadow-lg group-hover:scale-105 transition-transform duration-300">
-                    <!-- Referencing image_c92296.png verbatim as MoH Logo -->
                     <img src="image_c92296.png" alt="Ministry of Health Logo" class="h-full w-full object-contain">
                 </div>
                 <div>
@@ -117,7 +111,6 @@
                 </div>
             </a>
 
-            <!-- Desktop Nav Menu -->
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="#dashboard" class="text-sm font-semibold text-tbBurgundy-900 hover:text-black transition-colors">Overview</a>
                 <a href="#global" class="text-sm font-semibold text-tbBurgundy-900 hover:text-black transition-colors">Global</a>
@@ -129,17 +122,15 @@
 
             <div class="hidden md:flex items-center space-x-4">
                 <a href="#reports" class="px-5 py-2.5 rounded-xl bg-tbBurgundy-950 text-white font-bold text-sm shadow-md shadow-tbBurgundy-950/10 hover:bg-tbBurgundy-900 transition-all hover:scale-[1.02] duration-200">
-                    <i class="fa-solid fa-file-invoice-dollar mr-2"></i>Access Reports
+                    <i class="fa-solid fa-file-waveform mr-2"></i>Access Reports
                 </a>
             </div>
 
-            <!-- Mobile Hamburger Button -->
             <button onclick="toggleMobileMenu()" id="hamburgerBtn" class="md:hidden text-tbBurgundy-950 hover:text-black p-2 focus:outline-none">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
         </div>
 
-        <!-- Mobile Nav Menu dropdown -->
         <div id="mobileMenu" class="hidden md:hidden glass-panel border-t border-tbBurgundy-950/10 transition-all duration-300">
             <div class="px-4 pt-2 pb-6 space-y-3">
                 <a href="#dashboard" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg text-base font-bold text-tbBurgundy-900 hover:bg-black/5 hover:text-black">Overview Dashboard</a>
@@ -149,15 +140,13 @@
                 <a href="#simulator" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg text-base font-bold text-tbBurgundy-900 hover:bg-black/5 hover:text-black">Transmission Model</a>
                 <a href="#reports" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg text-base font-bold text-tbBurgundy-900 hover:bg-black/5 hover:text-black">Reports Portal</a>
                 <a href="#reports" onclick="toggleMobileMenu()" class="w-full text-center block px-4 py-3 rounded-lg bg-tbBurgundy-950 text-white font-bold">
-                    <i class="fa-solid fa-file-invoice-dollar mr-2"></i>Access Reports
+                    <i class="fa-solid fa-file-waveform mr-2"></i>Access Reports
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="relative pt-32 pb-24 md:pt-40 md:pb-36 overflow-hidden bg-gradient-to-b from-tbOptimal-500 via-tbAlkaline-500 to-tbOptimal-400">
-        <!-- Abstract Bio-Grid Mesh Background (Culture Media Glowing effects) -->
         <div class="absolute inset-0 pointer-events-none opacity-20">
             <div class="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] rounded-full bg-tbBurgundy-900 blur-[150px]"></div>
             <div class="absolute -bottom-[10%] -right-[10%] w-[50%] h-[50%] rounded-full bg-tbBurgundy-800 blur-[150px]"></div>
@@ -186,9 +175,7 @@
                 </div>
             </div>
 
-            <!-- Floating Global Counters Header -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 max-w-5xl mx-auto">
-                <!-- Global Stat -->
                 <div class="glass-panel rounded-3xl p-6 border-l-4 border-l-tbBurgundy-950 hover:translate-y-[-4px] transition-all duration-300">
                     <div class="flex justify-between items-start mb-4">
                         <span class="text-xs font-bold text-tbBurgundy-950 uppercase tracking-wider">Global Impact</span>
@@ -201,7 +188,6 @@
                     <div class="text-xs text-tbBurgundy-900/80 font-medium">1.3M deaths globally. One of the leading single-agent pathogen killers.</div>
                 </div>
 
-                <!-- Africa Stat -->
                 <div class="glass-panel rounded-3xl p-6 border-l-4 border-l-tbTerracotta-500 hover:translate-y-[-4px] transition-all duration-300">
                     <div class="flex justify-between items-start mb-4">
                         <span class="text-xs font-bold text-tbBurgundy-950 uppercase tracking-wider">Africa Region (WHO)</span>
@@ -214,7 +200,6 @@
                     <div class="text-xs text-tbBurgundy-900/80 font-medium">Represents 23% of global cases and 31% of worldwide TB-related deaths.</div>
                 </div>
 
-                <!-- Kenya Stat -->
                 <div class="glass-panel rounded-3xl p-6 border-l-4 border-l-tbOptimal-700 hover:translate-y-[-4px] transition-all duration-300">
                     <div class="flex justify-between items-start mb-4">
                         <span class="text-xs font-bold text-tbBurgundy-950 uppercase tracking-wider">Kenya National</span>
@@ -224,17 +209,16 @@
                     </div>
                     <div class="text-3xl font-extrabold text-tbBurgundy-950 mb-1">133,000</div>
                     <p class="text-sm text-tbBurgundy-900 mb-2 font-bold">Estimated Incident Cases</p>
-                    <div class="text-xs text-tbBurgundy-900/80 font-medium">32% missed cases (42,159 annual cases undiagnosed or not notified).</div>
+                    <div class="text-xs text-tbBurgundy-900/80 font-medium">32% missed cases (42,440 annual cases undiagnosed or not notified).</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Comparative Interactive Dashboard -->
     <section id="dashboard" class="py-24 bg-tbOptimal-200 border-t border-b border-tbOptimal-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-tbBurgundy-950 tracking-tight mb-4 animate-pulse">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-tbBurgundy-950 tracking-tight mb-4">
                     The Interactive Burden Dashboard
                 </h2>
                 <p class="text-tbBurgundy-900/80 font-semibold">
@@ -242,9 +226,7 @@
                 </p>
             </div>
 
-            <!-- Dashboard Container -->
             <div class="glass-panel rounded-3xl p-6 md:p-10 shadow-2xl">
-                <!-- Tabs navigation -->
                 <div class="flex flex-wrap border-b border-tbBurgundy-950/10 gap-2 mb-8">
                     <button onclick="switchTab('tab-global')" id="btn-tab-global" class="tab-btn active px-6 py-3 font-bold text-sm tracking-wide rounded-t-xl transition-all border-b-2 border-tbBurgundy-950 text-tbBurgundy-950 bg-white/30">
                         <i class="fa-solid fa-globe mr-2"></i>Global Statistics (WHO 2023)
@@ -257,8 +239,7 @@
                     </button>
                 </div>
 
-                <!-- Tab: Global -->
-                <div id="tab-global" class="tab-content block space-y-8 animate-fadeIn">
+                <div id="tab-global" class="tab-content block space-y-8">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                         <div class="lg:col-span-7 space-y-6">
                             <span class="text-xs font-bold text-tbBurgundy-950 uppercase tracking-wider block">Global Incidence & Demographics</span>
@@ -298,7 +279,6 @@
                             </div>
                         </div>
 
-                        <!-- Global Visual Representation -->
                         <div class="lg:col-span-5 bg-white/40 p-6 rounded-3xl border border-tbBurgundy-950/10 flex flex-col justify-between h-full">
                             <span class="text-xs font-bold text-tbBurgundy-900 block mb-4">Concentration of Global TB Burden</span>
                             <div class="space-y-4">
@@ -306,7 +286,6 @@
                                     <span>High Burden Nations (Top 8 Countries)</span>
                                     <span class="text-tbTerracotta-600 font-bold">68% of Total Cases</span>
                                 </div>
-                                <!-- Visual Loading Bar -->
                                 <div class="w-full h-4 bg-black/10 rounded-full overflow-hidden">
                                     <div class="h-full bg-gradient-to-r from-tbTerracotta-500 to-tbOptimal-600 rounded-full" style="width: 68%;"></div>
                                 </div>
@@ -337,8 +316,7 @@
                     </div>
                 </div>
 
-                <!-- Tab: Africa -->
-                <div id="tab-africa" class="tab-content hidden space-y-8 animate-fadeIn">
+                <div id="tab-africa" class="tab-content hidden space-y-8">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                         <div class="lg:col-span-7 space-y-6">
                             <span class="text-xs font-bold text-tbTerracotta-600 uppercase tracking-wider block">Regional Update (WHO AFRO)</span>
@@ -365,7 +343,6 @@
                             </div>
                         </div>
 
-                        <!-- Africa Graphic -->
                         <div class="lg:col-span-5 bg-white/40 p-6 rounded-3xl border border-tbBurgundy-950/10 flex flex-col justify-between h-full">
                             <span class="text-xs font-bold text-tbBurgundy-900 block mb-4">Milestone Tracker — End TB targets</span>
                             <div class="space-y-4">
@@ -398,8 +375,7 @@
                     </div>
                 </div>
 
-                <!-- Tab: Kenya -->
-                <div id="tab-kenya" class="tab-content hidden space-y-8 animate-fadeIn">
+                <div id="tab-kenya" class="tab-content hidden space-y-8">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                         <div class="lg:col-span-7 space-y-6">
                             <span class="text-xs font-bold text-tbOptimal-700 uppercase tracking-wider block">Kenya National Focus (NLTP 2022-2026)</span>
@@ -419,7 +395,7 @@
                                     <div class="text-tbTerracotta-500 text-2xl font-black w-12 text-center">32%</div>
                                     <div>
                                         <h4 class="text-sm font-bold text-tbBurgundy-950">"Missing" Incident Cases</h4>
-                                        <p class="text-xs text-tbBurgundy-900/70 font-semibold">42,159 annual cases undiagnosed.</p>
+                                        <p class="text-xs text-tbBurgundy-900/70 font-semibold">42,440 annual cases undiagnosed.</p>
                                     </div>
                                 </div>
                                 <div class="bg-white/40 p-4 rounded-2xl border border-tbBurgundy-950/10 flex items-center space-x-4">
@@ -439,7 +415,6 @@
                             </div>
                         </div>
 
-                        <!-- Kenya Graphic -->
                         <div class="lg:col-span-5 bg-white/40 p-6 rounded-3xl border border-tbBurgundy-950/10 flex flex-col justify-between h-full">
                             <span class="text-xs font-bold text-tbBurgundy-900 block mb-4">MOH Success Milestones (2015-2025)</span>
                             <div class="space-y-4">
@@ -448,7 +423,7 @@
                                     <span class="text-tbOptimal-700 font-extrabold">-45%</span>
                                 </div>
                                 <div class="w-full h-2 bg-black/10 rounded-full overflow-hidden">
-                                    <div class="h-full bg-tbOptimal-500 rounded-full animate-pulse" style="width: 45%;"></div>
+                                    <div class="h-full bg-tbOptimal-500 rounded-full" style="width: 45%;"></div>
                                 </div>
 
                                 <div class="flex justify-between text-xs text-tbBurgundy-900 pt-2">
@@ -456,7 +431,7 @@
                                     <span class="text-tbOptimal-700 font-extrabold">-58%</span>
                                 </div>
                                 <div class="w-full h-2 bg-black/10 rounded-full overflow-hidden">
-                                    <div class="h-full bg-tbOptimal-500 rounded-full animate-pulse" style="width: 58%;"></div>
+                                    <div class="h-full bg-tbOptimal-500 rounded-full" style="width: 58%;"></div>
                                 </div>
                             </div>
                             <div class="border-t border-tbBurgundy-950/10 pt-6 mt-6">
@@ -473,7 +448,6 @@
         </div>
     </section>
 
-    <!-- Global Burden Detailed Section -->
     <section id="global" class="py-24 bg-tbOptimal-100 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -511,12 +485,10 @@
                     </div>
                 </div>
 
-                <!-- Graphic Panel with simulated global distribution chart -->
                 <div class="lg:col-span-6">
                     <div class="glass-panel rounded-3xl p-8 relative overflow-hidden">
                         <h3 class="text-lg font-bold text-tbBurgundy-950 mb-6">Estimated Global TB Cases by Region</h3>
                         
-                        <!-- Mini CSS Bar Charts -->
                         <div class="space-y-5">
                             <div>
                                 <div class="flex justify-between text-xs font-semibold text-tbBurgundy-900 mb-2">
@@ -565,7 +537,6 @@
                             </div>
                         </div>
 
-                        <!-- Highlight Footnote -->
                         <div class="bg-white/40 p-4 rounded-2xl border border-tbBurgundy-950/10 mt-8 text-xs text-tbBurgundy-900/80 flex items-start space-x-3 font-semibold">
                             <i class="fa-solid fa-circle-info text-tbTerracotta-600 mt-0.5 text-base"></i>
                             <p>
@@ -578,11 +549,9 @@
         </div>
     </section>
 
-    <!-- Africa Burden Detailed Section -->
     <section id="africa" class="py-24 bg-tbOptimal-200 border-t border-b border-tbOptimal-300 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Visual Infographic representing HIV, Children, and Regional Impact -->
                 <div class="lg:col-span-6 order-2 lg:order-1">
                     <div class="grid grid-cols-2 gap-4">
                         <div class="glass-panel rounded-3xl p-6 hover:border-tbOptimal-600/30 transition-all duration-300">
@@ -618,7 +587,6 @@
                     </div>
                 </div>
 
-                <!-- Regional Copy -->
                 <div class="lg:col-span-6 space-y-6 order-1 lg:order-2">
                     <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/50 text-tbBurgundy-950 border border-tbBurgundy-950/10">
                         <i class="fa-solid fa-earth-africa mr-1.5"></i>WHO-AFRO Surveillance Update
@@ -643,7 +611,6 @@
         </div>
     </section>
 
-    <!-- Kenya Burden Detailed Section -->
     <section id="kenya" class="py-24 bg-tbOptimal-100 relative overflow-hidden">
         <div class="absolute inset-0 pointer-events-none opacity-10">
             <div class="absolute top-[30%] left-[5%] w-[400px] h-[400px] rounded-full bg-tbOptimal-500 blur-[120px]"></div>
@@ -665,14 +632,13 @@
                     </p>
                     <div class="bg-white/50 border border-tbBurgundy-950/10 p-6 rounded-2xl space-y-3 shadow-sm">
                         <div class="text-tbBurgundy-950 font-black text-lg flex items-center">
-                            <i class="fa-solid fa-circle-exclamation mr-2 text-tbTerracotta-600"></i>The 42,159 Disconnect
+                            <i class="fa-solid fa-circle-exclamation mr-2 text-tbTerracotta-600"></i>The 42,440 Disconnect
                         </div>
                         <p class="text-tbBurgundy-900 text-sm leading-relaxed font-medium">
-                            With an estimated incidence of <strong>133,000 cases</strong> in 2022, the National Tuberculosis and Leprosy Program notified 90,560 cases. This leaves approximately <strong>32% (42,159 cases) "missing"</strong>—undetected, untreated, and actively transmitting infection in households and work environments.
+                            With an estimated incidence of <strong>133,000 cases</strong> in 2022, the National Tuberculosis and Leprosy Program notified 90,560 cases. This leaves approximately <strong>32% (42,440 cases) "missing"</strong>—undetected, untreated, and actively transmitting infection in households and work environments.
                         </p>
                     </div>
 
-                    <!-- Highlighted Strategies -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="flex items-start space-x-3">
                             <i class="fa-solid fa-users-viewfinder text-tbOptimal-700 mt-1"></i>
@@ -691,10 +657,8 @@
                     </div>
                 </div>
 
-                <!-- Graphic Spotlight Card: Kenya National Case Study -->
                 <div class="lg:col-span-6">
                     <div class="bg-white/40 border border-tbBurgundy-950/10 rounded-3xl p-8 relative shadow-xl overflow-hidden">
-                        <!-- Flag Accent colors -->
                         <div class="absolute top-0 left-0 w-full h-1.5 flex">
                             <div class="w-1/3 h-full bg-black"></div>
                             <div class="w-1/3 h-full bg-red-600"></div>
@@ -706,40 +670,34 @@
                             <span class="px-2.5 py-1 text-[10px] bg-tbOptimal-500/30 text-tbOptimal-800 font-extrabold rounded-lg uppercase tracking-wide">68% Detection Success</span>
                         </div>
 
-                        <!-- Data Visual SVG chart of Kenya notification progression -->
                         <div class="mb-8">
                             <div class="text-xs font-bold text-tbBurgundy-900 mb-4">MOH Official DSTB Cases Notified Trend:</div>
                             
                             <div class="flex items-end justify-between h-40 pt-4 border-b border-tbBurgundy-950/10">
-                                <!-- Year 2017 -->
                                 <div class="flex flex-col items-center w-1/5 space-y-2 group">
                                     <div class="w-full bg-black/5 hover:bg-tbOptimal-600/40 rounded-t-md transition-all h-24 relative">
                                         <span class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-[10px] font-bold text-tbBurgundy-950 hidden group-hover:block">75,300</span>
                                     </div>
                                     <span class="text-[10px] font-bold text-tbBurgundy-900">2017</span>
                                 </div>
-                                <!-- Year 2019 -->
                                 <div class="flex flex-col items-center w-1/5 space-y-2 group">
                                     <div class="w-full bg-black/5 hover:bg-tbOptimal-600/40 rounded-t-md transition-all h-28 relative">
                                         <span class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-[10px] font-bold text-tbBurgundy-950 hidden group-hover:block">82,100</span>
                                     </div>
                                     <span class="text-[10px] font-bold text-tbBurgundy-900">2019</span>
                                 </div>
-                                <!-- Year 2020 (Pandemic drop) -->
                                 <div class="flex flex-col items-center w-1/5 space-y-2 group">
                                     <div class="w-full bg-tbTerracotta-500/20 hover:bg-tbTerracotta-500/40 rounded-t-md transition-all h-20 relative">
                                         <span class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-[10px] font-bold text-tbBurgundy-950 hidden group-hover:block">72,400</span>
                                     </div>
                                     <span class="text-[10px] font-bold text-tbBurgundy-900">2020 (COVID)</span>
                                 </div>
-                                <!-- Year 2021 -->
                                 <div class="flex flex-col items-center w-1/5 space-y-2 group">
                                     <div class="w-full bg-black/5 hover:bg-tbOptimal-600/40 rounded-t-md transition-all h-26 relative">
                                         <span class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-[10px] font-bold text-tbBurgundy-950 hidden group-hover:block">77,854</span>
                                     </div>
                                     <span class="text-[10px] font-bold text-tbBurgundy-900">2021</span>
                                 </div>
-                                <!-- Year 2022 -->
                                 <div class="flex flex-col items-center w-1/5 space-y-2 group">
                                     <div class="w-full bg-gradient-to-t from-tbOptimal-600 to-tbAlkaline-500 rounded-t-md transition-all h-32 relative">
                                         <span class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-[10px] font-extrabold text-tbBurgundy-950">90,560</span>
@@ -765,19 +723,17 @@
         </div>
     </section>
 
-    <!-- Interactive Simulation Module -->
     <section id="simulator" class="py-24 bg-tbOptimal-200 border-t border-b border-tbOptimal-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center mb-16">
                 <span class="text-xs font-bold text-tbTerracotta-600 uppercase tracking-widest block mb-2">Mathematical Modeling</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-tbBurgundy-950 mb-4 animate-pulse">Interactive Transmission Gap Simulator</h2>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-tbBurgundy-950 mb-4">Interactive Transmission Gap Simulator</h2>
                 <p class="text-tbBurgundy-900/80 font-semibold">
                     See how improving the **Case Detection Rate (CDR)** prevents ongoing transmission vectors. Drag the slider below to simulate notifications, missing cases, and secondary infections.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
-                <!-- Inputs -->
                 <div class="lg:col-span-5 glass-panel rounded-3xl p-6 md:p-8 flex flex-col justify-between space-y-6">
                     <div>
                         <h3 class="text-lg font-bold text-tbBurgundy-950 mb-4"><i class="fa-solid fa-sliders text-tbTerracotta-600 mr-2"></i>Configure Parameters</h3>
@@ -785,13 +741,12 @@
                             Based on epidemiological assumptions, a single untreated active tuberculosis case can transmit infection to an average of **10 to 15 people annually** in household settings.
                         </p>
                         
-                        <!-- Slider Case Detection Rate -->
                         <div class="space-y-3">
                             <div class="flex justify-between text-sm font-bold text-tbBurgundy-950">
                                 <span>Case Detection Rate (CDR)</span>
                                 <span class="text-tbOptimal-700 text-lg font-black" id="cdrVal">68%</span>
                             </div>
-                            <input type="range" min="30" max="100" value="68" step="1" id="cdrSlider" oninput="updateSimulation()" class="w-full h-2 bg-black/10 rounded-lg appearance-none cursor-pointer accent-tbOptimal-600">
+                            <input type="range" min="30" max="100" value="68" step="1" id="cdrSlider" oninput="updateSimulation()" aria-label="Case Detection Rate Parameter" class="w-full h-2 bg-black/10 rounded-lg appearance-none cursor-pointer accent-tbOptimal-600 focus:outline-none focus:ring-2 focus:ring-tbBurgundy-950">
                             <div class="flex justify-between text-[10px] text-tbBurgundy-900/60 font-semibold uppercase">
                                 <span>Critical Deficit (30%)</span>
                                 <span>Current Kenya (68%)</span>
@@ -808,25 +763,21 @@
                     </div>
                 </div>
 
-                <!-- Simulation Outputs -->
                 <div class="lg:col-span-7 bg-white/40 border border-tbBurgundy-950/10 rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-sm">
                     <div>
                         <h3 class="text-lg font-bold text-tbBurgundy-950 mb-6"><i class="fa-solid fa-square-poll-vertical text-tbOptimal-700 mr-2"></i>Estimated Structural Outcome</h3>
                         
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-                            <!-- Metric 1 -->
                             <div class="bg-white/40 p-5 rounded-2xl border border-tbBurgundy-950/10 text-center shadow-xs">
                                 <span class="text-[10px] font-bold text-tbBurgundy-900 uppercase tracking-wider block mb-2">Notified & Treated</span>
                                 <div class="text-2xl font-black text-tbBurgundy-950" id="simNotified">90,440</div>
                                 <p class="text-[10px] text-tbBurgundy-900/70 mt-1 font-semibold">Cases seeking therapy</p>
                             </div>
-                            <!-- Metric 2 -->
                             <div class="bg-white/40 p-5 rounded-2xl border border-tbBurgundy-950/10 text-center shadow-xs">
                                 <span class="text-[10px] font-bold text-tbBurgundy-900 uppercase tracking-wider block mb-2">Missing / Untreated</span>
                                 <div class="text-2xl font-black text-tbTerracotta-600" id="simMissing">42,560</div>
-                                <p class="text-[10px] text-tbBurgundy-900/70 mt-1 font-semibold">Undetected viral vectors</p>
+                                <p class="text-[10px] text-tbBurgundy-900/70 mt-1 font-semibold">Undetected bacterial vectors</p>
                             </div>
-                            <!-- Metric 3 -->
                             <div class="bg-white/40 p-5 rounded-2xl border border-tbBurgundy-950/10 text-center shadow-xs">
                                 <span class="text-[10px] font-bold text-tbBurgundy-900 uppercase tracking-wider block mb-2">Secondary Exposures</span>
                                 <div class="text-2xl font-black text-tbBurgundy-900" id="simExposures">532,000</div>
@@ -834,7 +785,6 @@
                             </div>
                         </div>
 
-                        <!-- Progress indicators -->
                         <div class="space-y-4">
                             <div>
                                 <div class="flex justify-between text-xs font-semibold text-tbBurgundy-900 mb-2">
@@ -861,7 +811,6 @@
         </div>
     </section>
 
-    <!-- Reports Portal (Upload files Representation) -->
     <section id="reports" class="py-24 bg-tbOptimal-100 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -873,7 +822,6 @@
                         Access detailed analyses synthesized directly from primary surveillance documents. Filter and search through national and regional archives.
                     </p>
                 </div>
-                <!-- Interactive Search & Filters -->
                 <div class="mt-6 md:mt-0 flex flex-col sm:flex-row gap-3">
                     <div class="relative">
                         <input type="text" id="reportSearch" onkeyup="filterReports()" placeholder="Search through files..." class="w-full sm:w-64 bg-white/50 text-tbBurgundy-950 pl-10 pr-4 py-2.5 rounded-xl border border-tbBurgundy-950/15 focus:outline-none focus:ring-1 focus:ring-tbOptimal-600 text-sm font-semibold">
@@ -882,10 +830,27 @@
                 </div>
             </div>
 
-            <!-- Report Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="reportsGrid">
                 
-                <!-- Card 1: Global Tuberculosis Report 2023 -->
+                <div class="report-card glass-panel rounded-3xl p-6 flex flex-col justify-between border-2 border-tbBurgundy-950/20 hover:border-tbBurgundy-950/50 transition-all duration-300 shadow-lg bg-gradient-to-br from-white/60 to-tbChampagne-100/30" data-scope="national" data-title="compiled project report page surveillance summary metadata metrics analysis">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-tbBurgundy-950 text-tbOptimal-400 border border-tbBurgundy-950/20">Compiled Project Report Page</span>
+                            <span class="text-xs font-bold text-tbBurgundy-700">Core Evaluation</span>
+                        </div>
+                        <h3 class="text-lg font-black text-tbBurgundy-950 mb-2 line-clamp-2">The Complete Synthesized Burden of TB Project Report</h3>
+                        <p class="text-xs text-tbBurgundy-900/90 mb-6 leading-relaxed line-clamp-4 font-semibold">
+                            Explore the main structural repository documentation mapping metadata tracking metrics, strategic frameworks, data-driven parameters, and analytical summaries across national fronts.
+                        </p>
+                    </div>
+                    <div class="border-t border-tbBurgundy-950/10 pt-4 flex justify-between items-center mt-4">
+                        <span class="text-xs text-tbBurgundy-900/60 font-semibold"><i class="fa-solid fa-book-open mr-1"></i>Project Deliverable</span>
+                        <a href="https://github.com/Osoti-Osoti/the_burden_of_TB/blob/main/report.html" target="_blank" class="px-4 py-2 text-xs font-extrabold bg-tbBurgundy-950 text-white hover:bg-tbBurgundy-900 rounded-lg transition-all shadow-md inline-flex items-center">
+                            Open Full Report <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
                 <div class="report-card glass-panel rounded-3xl p-6 flex flex-col justify-between hover:border-tbOptimal-600/40 transition-all duration-300 shadow-sm" data-scope="global" data-title="global tuberculosis report 2023 who">
                     <div>
                         <div class="flex justify-between items-start mb-6">
@@ -905,7 +870,6 @@
                     </div>
                 </div>
 
-                <!-- Card 2: Tuberculosis in the African Region 2023 report -->
                 <div class="report-card glass-panel rounded-3xl p-6 flex flex-col justify-between hover:border-tbOptimal-600/40 transition-all duration-300 shadow-sm" data-scope="regional" data-title="tuberculosis in the african region 2023 report who afro">
                     <div>
                         <div class="flex justify-between items-start mb-6">
@@ -925,7 +889,6 @@
                     </div>
                 </div>
 
-                <!-- Card 3: Kenya Annual-Report_2022 -->
                 <div class="report-card glass-panel rounded-3xl p-6 flex flex-col justify-between hover:border-tbOptimal-600/40 transition-all duration-300 shadow-sm" data-scope="national" data-title="kenya annual report 2022 surveillance nltp moh">
                     <div>
                         <div class="flex justify-between items-start mb-6">
@@ -945,7 +908,6 @@
                     </div>
                 </div>
 
-                <!-- Card 4: Integrated Guideline for Tuberculosis -->
                 <div class="report-card glass-panel rounded-3xl p-6 flex flex-col justify-between hover:border-tbOptimal-600/40 transition-all duration-300 shadow-sm" data-scope="national" data-title="integrated guideline for tuberculosis leprosy and lung disease 2021 clinical moh">
                     <div>
                         <div class="flex justify-between items-start mb-6">
@@ -965,59 +927,21 @@
                     </div>
                 </div>
 
-                <!-- Card 5: DNTLDP Annual Report 2021 -->
-                <div class="report-card glass-panel rounded-3xl p-6 flex flex-col justify-between hover:border-tbOptimal-600/40 transition-all duration-300 shadow-sm" data-scope="national" data-title="dntldp annual report 2021 moh national">
-                    <div>
-                        <div class="flex justify-between items-start mb-6">
-                            <span class="px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-tbOptimal-500/20 text-tbOptimal-800 border border-tbOptimal-500/20">Kenya National</span>
-                            <span class="text-xs font-bold text-tbBurgundy-900/50">PDF Document</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-tbBurgundy-950 mb-2 line-clamp-2">DNTLD-P Annual Report 2021</h3>
-                        <p class="text-xs text-tbBurgundy-900/80 mb-6 leading-relaxed line-clamp-3 font-medium">
-                            A historical overview of the Division of National Tuberculosis, Leprosy and Lung Disease Program, covering service preservation strategies during COVID-19 pandemic.
-                        </p>
-                    </div>
-                    <div class="border-t border-tbBurgundy-950/10 pt-4 flex justify-between items-center mt-4">
-                        <span class="text-xs text-tbBurgundy-900/60 font-semibold"><i class="fa-solid fa-calendar mr-1"></i>Dec 2021</span>
-                        <button onclick="openModal('modal-kenya-tb-2021')" class="px-4 py-2 text-xs font-extrabold text-tbBurgundy-950 hover:bg-white/40 bg-white/20 border border-tbBurgundy-950/10 rounded-lg transition-all">
-                            View Summary <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[10px]"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Placeholder Submission Cards represent later updates -->
-                <div class="report-card border border-dashed border-tbBurgundy-950/20 rounded-3xl p-6 flex flex-col justify-between bg-black/5 shadow-xs">
-                    <div class="flex flex-col items-center justify-center text-center py-8">
-                        <div class="w-12 h-12 rounded-2xl bg-black/10 border border-tbBurgundy-950/10 flex items-center justify-center text-tbBurgundy-950/40 mb-4 animate-bounce">
-                            <i class="fa-solid fa-file-circle-plus text-xl"></i>
-                        </div>
-                        <h3 class="text-sm font-bold text-tbBurgundy-950/60">Future Submission Placeholder</h3>
-                        <p class="text-xs text-tbBurgundy-900/50 mt-2 max-w-[200px] font-semibold">
-                            We will append additional surveillance dashboards and county-level notifications as new datasets publish.
-                        </p>
-                    </div>
-                    <div class="border-t border-tbBurgundy-950/5 pt-4 text-center">
-                        <span class="text-[10px] uppercase font-bold text-tbBurgundy-950/30 tracking-wider">Awaiting Integration</span>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Interactive Clinical Guidelines Section -->
     <section class="py-24 bg-tbOptimal-200 border-t border-tbOptimal-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center mb-16">
                 <span class="text-xs font-bold text-tbTerracotta-600 uppercase tracking-widest block mb-2">Public Health Literacy</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-tbBurgundy-950 mb-4 animate-pulse">Know the Symptoms & Act</h2>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-tbBurgundy-950 mb-4">Know the Symptoms & Act</h2>
                 <p class="text-tbBurgundy-900/80 font-semibold">
                     Understanding the standard clinical presentation of Tuberculosis is the first step toward closing the national diagnosis gap. If you or someone you know exhibits these signs, seek a molecular GeneXpert evaluation.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <!-- Symptom 1 -->
                 <div class="glass-panel p-6 rounded-3xl border-t-4 border-t-tbTerracotta-500 shadow-xs">
                     <div class="text-2xl text-tbTerracotta-600 mb-4"><i class="fa-solid fa-clock-rotate-left"></i></div>
                     <h4 class="text-base font-bold text-tbBurgundy-950 mb-2">Prolonged Cough</h4>
@@ -1025,7 +949,6 @@
                         A persistent cough lasting for more than two weeks, occasionally producing blood-tinged sputum, is the primary clinical signal of active pulmonary TB.
                     </p>
                 </div>
-                <!-- Symptom 2 -->
                 <div class="glass-panel p-6 rounded-3xl border-t-4 border-t-tbTerracotta-500 shadow-xs">
                     <div class="text-2xl text-tbTerracotta-600 mb-4"><i class="fa-solid fa-moon"></i></div>
                     <h4 class="text-base font-bold text-tbBurgundy-950 mb-2">Night Sweats</h4>
@@ -1033,7 +956,6 @@
                         Experiencing drenching sweats during sleep hours, unrelated to ambient room temperature or physical exertion.
                     </p>
                 </div>
-                <!-- Symptom 3 -->
                 <div class="glass-panel p-6 rounded-3xl border-t-4 border-t-tbTerracotta-500 shadow-xs">
                     <div class="text-2xl text-tbTerracotta-600 mb-4"><i class="fa-solid fa-weight-scale"></i></div>
                     <h4 class="text-base font-bold text-tbBurgundy-950 mb-2">Unexplained Weight Loss</h4>
@@ -1041,7 +963,6 @@
                         Rapid, unexplained loss of body mass, accompanied by complete loss of appetite and ongoing clinical lethargy.
                     </p>
                 </div>
-                <!-- Symptom 4 -->
                 <div class="glass-panel p-6 rounded-3xl border-t-4 border-t-tbTerracotta-500 shadow-xs">
                     <div class="text-2xl text-tbTerracotta-600 mb-4"><i class="fa-solid fa-temperature-high"></i></div>
                     <h4 class="text-base font-bold text-tbBurgundy-950 mb-2">Afternoon Fevers</h4>
@@ -1051,7 +972,6 @@
                 </div>
             </div>
 
-            <!-- Warning CTA banner -->
             <div class="bg-white/40 border border-tbBurgundy-950/10 rounded-3xl p-8 md:p-10 mt-12 flex flex-col md:flex-row items-center justify-between shadow-sm">
                 <div class="mb-6 md:mb-0 max-w-2xl">
                     <h3 class="text-lg font-bold text-tbBurgundy-950 mb-2">Are you standardizing clinical practice?</h3>
@@ -1066,7 +986,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-tbOptimal-300 text-tbBurgundy-900/80 border-t border-tbBurgundy-950/10 py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center mb-10">
@@ -1091,11 +1010,6 @@
         </div>
     </footer>
 
-    <!-- ======================================= -->
-    <!--          ANALYTICAL MODALS              -->
-    <!-- ======================================= -->
-
-    <!-- Modal 1: Global Tuberculosis Report 2023 -->
     <div id="modal-global-tb" class="fixed inset-0 z-50 overflow-y-auto hidden bg-black/50 flex items-center justify-center p-4">
         <div class="glass-panel-light max-w-3xl w-full rounded-3xl overflow-hidden shadow-2xl relative">
             <div class="p-6 md:p-8 space-y-6">
@@ -1128,7 +1042,6 @@
         </div>
     </div>
 
-    <!-- Modal 2: Tuberculosis in the African Region 2023 report -->
     <div id="modal-africa-tb" class="fixed inset-0 z-50 overflow-y-auto hidden bg-black/50 flex items-center justify-center p-4">
         <div class="glass-panel-light max-w-3xl w-full rounded-3xl overflow-hidden shadow-2xl relative">
             <div class="p-6 md:p-8 space-y-6">
@@ -1161,7 +1074,6 @@
         </div>
     </div>
 
-    <!-- Modal 3: Kenya Annual-Report_2022 -->
     <div id="modal-kenya-tb-2022" class="fixed inset-0 z-50 overflow-y-auto hidden bg-black/50 flex items-center justify-center p-4">
         <div class="glass-panel-light max-w-3xl w-full rounded-3xl overflow-hidden shadow-2xl relative">
             <div class="p-6 md:p-8 space-y-6">
@@ -1179,7 +1091,7 @@
                     <h4 class="font-bold text-tbBurgundy-950 uppercase text-[10px] tracking-wider mb-2">Key Synthesized Findings:</h4>
                     <ul class="space-y-3 list-disc pl-4 text-tbBurgundy-900 font-semibold">
                         <li><strong>Case Notification Boost:</strong> Notified drug-susceptible cases (DSTB) reached 90,560, reflecting a stellar 16.7% growth compared to 2021 (77,854) driven by targeted Active Case Finding (ACF).</li>
-                        <li><strong>Diagnostic Gap:</strong> National TB incidence is estimated at 133,000 cases. This highlights a 68% detection rate, indicating that 42,159 (32%) cases went completely undiagnosed or untracked.</li>
+                        <li><strong>Diagnostic Gap:</strong> National TB incidence is estimated at 133,000 cases. This highlights a 68% detection rate, indicating that 42,440 (32%) cases went completely undiagnosed or untracked.</li>
                         <li><strong>Pediatric Improvements:</strong> Through focused hospital interventions, childhood TB notification grew from 9.6% in 2021 to 11.4% in 2022.</li>
                         <li><strong>Preventative Strategy:</strong> Contacts screened from bacteriologically confirmed index patients grew by over 150%, leveraging community health promoters.</li>
                     </ul>
@@ -1194,7 +1106,6 @@
         </div>
     </div>
 
-    <!-- Modal 4: Integrated Guideline for Tuberculosis -->
     <div id="modal-guidelines-tb" class="fixed inset-0 z-50 overflow-y-auto hidden bg-black/50 flex items-center justify-center p-4">
         <div class="glass-panel-light max-w-3xl w-full rounded-3xl overflow-hidden shadow-2xl relative">
             <div class="p-6 md:p-8 space-y-6">
@@ -1227,40 +1138,6 @@
         </div>
     </div>
 
-    <!-- Modal 5: DNTLDP Annual Report 2021 -->
-    <div id="modal-kenya-tb-2021" class="fixed inset-0 z-50 overflow-y-auto hidden bg-black/50 flex items-center justify-center p-4">
-        <div class="glass-panel-light max-w-3xl w-full rounded-3xl overflow-hidden shadow-2xl relative">
-            <div class="p-6 md:p-8 space-y-6">
-                <div class="flex justify-between items-start">
-                    <div>
-                        <span class="text-xs font-bold text-tbOptimal-700 uppercase tracking-widest block mb-1">NLTP MOH Kenya</span>
-                        <h3 class="text-xl md:text-2xl font-bold text-tbBurgundy-950">DNTLD-P Annual Report 2021 Summary</h3>
-                    </div>
-                    <button onclick="closeModal('modal-kenya-tb-2021')" class="text-tbBurgundy-900/70 hover:text-black p-2 focus:outline-none">
-                        <i class="fa-solid fa-xmark text-xl"></i>
-                    </button>
-                </div>
-
-                <div class="border-t border-tbBurgundy-950/10 pt-4 space-y-4 text-xs leading-relaxed text-tbBurgundy-900">
-                    <h4 class="font-bold text-tbBurgundy-950 uppercase text-[10px] tracking-wider mb-2">Key Synthesized Findings:</h4>
-                    <ul class="space-y-3 list-disc pl-4 text-tbBurgundy-900 font-semibold">
-                        <li><strong>Pandemic Persistence:</strong> Documented crucial strategies that helped maintain notification numbers amidst severe COVID-19 lockdown restrictions in 2021.</li>
-                        <li><strong>Historical Figures:</strong> Estimated that approximately 140,000 people fell ill due to TB in 2021, and around 32,000 succumbed to the disease.</li>
-                        <li><strong>Integrated Advocacy:</strong> Explored DNTLD-P's updated digital media strategy, running radio awareness campaigns and optimizing the program website to reach high-risk populations.</li>
-                        <li><strong>Drug Resistance Focus:</strong> Identified that approximately 2,500 people contract drug-resistant TB annually in Kenya, requiring robust regional isolation and management facilities.</li>
-                    </ul>
-                </div>
-
-                <div class="border-t border-tbBurgundy-950/10 pt-6 flex justify-end">
-                    <button onclick="closeModal('modal-kenya-tb-2021')" class="px-5 py-2.5 rounded-xl bg-tbBurgundy-950 hover:bg-tbBurgundy-900 text-white font-bold text-xs transition-all shadow-sm">
-                        Close Summary
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- JavaScript Interactions -->
     <script>
         // Toggle mobile navigation menu
         function toggleMobileMenu() {
