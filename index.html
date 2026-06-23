@@ -308,7 +308,7 @@
                                 </div>
                                 <!-- Visual Loading Bar -->
                                 <div class="w-full h-4 bg-black/10 rounded-full overflow-hidden">
-                                    <div class="h-full bg-gradient-to-r from-tbTerracotta-500 to-tbOptimal-600 rounded-full" style="width: 68%;"></div>
+                                    <div class="h-full bg-gradient-to-r from-tbTerracotta-500 to-tbChampagne-300 rounded-full" style="width: 68%;"></div>
                                 </div>
                                 <div class="flex flex-wrap gap-2 pt-2">
                                     <span class="px-2.5 py-1 text-xs rounded-lg bg-white/50 text-tbBurgundy-950 font-bold border border-tbBurgundy-950/15">India</span>
@@ -448,7 +448,7 @@
                                     <span class="text-tbOptimal-700 font-extrabold">-45%</span>
                                 </div>
                                 <div class="w-full h-2 bg-black/10 rounded-full overflow-hidden">
-                                    <div class="h-full bg-tbOptimal-500 rounded-full animate-pulse" style="width: 45%;"></div>
+                                    <div class="h-full bg-tbSage-500 rounded-full animate-pulse" style="width: 45%;"></div>
                                 </div>
 
                                 <div class="flex justify-between text-xs text-tbBurgundy-900 pt-2">
@@ -456,7 +456,7 @@
                                     <span class="text-tbOptimal-700 font-extrabold">-58%</span>
                                 </div>
                                 <div class="w-full h-2 bg-black/10 rounded-full overflow-hidden">
-                                    <div class="h-full bg-tbOptimal-500 rounded-full animate-pulse" style="width: 58%;"></div>
+                                    <div class="h-full bg-tbSage-500 rounded-full animate-pulse" style="width: 58%;"></div>
                                 </div>
                             </div>
                             <div class="border-t border-tbBurgundy-950/10 pt-6 mt-6">
@@ -675,14 +675,14 @@
                     <!-- Highlighted Strategies -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="flex items-start space-x-3">
-                            <i class="fa-solid fa-users-viewfinder text-tbOptimal-700 mt-1"></i>
+                            <i class="fa-solid fa-users-viewfinder text-tbSage-300 mt-1"></i>
                             <div>
                                 <h4 class="text-tbBurgundy-950 text-sm font-bold">Active Case Finding (ACF)</h4>
                                 <p class="text-xs text-tbBurgundy-900/80 font-medium">Integrated screening in healthcare settings and community levels led to a 16.7% notification bump.</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-3">
-                            <i class="fa-solid fa-stethoscope text-tbOptimal-700 mt-1"></i>
+                            <i class="fa-solid fa-stethoscope text-tbSage-300 mt-1"></i>
                             <div>
                                 <h4 class="text-tbBurgundy-950 text-sm font-bold">Molecular Diagnostics</h4>
                                 <p class="text-xs text-tbBurgundy-900/80 font-medium">Expanded deployments of high-impact GeneXpert testing platforms and AI-enabled portable digital X-rays.</p>
@@ -829,7 +829,7 @@
                             <!-- Metric 3 -->
                             <div class="bg-white/40 p-5 rounded-2xl border border-tbBurgundy-950/10 text-center shadow-xs">
                                 <span class="text-[10px] font-bold text-tbBurgundy-900 uppercase tracking-wider block mb-2">Secondary Exposures</span>
-                                <div class="text-2xl font-black text-tbBurgundy-900" id="simExposures">532,000</div>
+                                <div class="text-2xl font-black text-tbBurgundy-950" id="simExposures">532,000</div>
                                 <p class="text-[10px] text-tbBurgundy-900/70 mt-1 font-semibold">Estimated annual spread</p>
                             </div>
                         </div>
@@ -873,13 +873,34 @@
                         Access detailed analyses synthesized directly from primary surveillance documents. Filter and search through national and regional archives.
                     </p>
                 </div>
-                <!-- Interactive Search & Filters -->
-                <div class="mt-6 md:mt-0 flex flex-col sm:flex-row gap-3">
-                    <div class="relative">
+                <!-- Interactive Search, Filters & Master Report Link -->
+                <div class="mt-6 md:mt-0 flex flex-col sm:flex-row gap-3 items-center">
+                    <a href="https://github.com/Osoti-Osoti/the_burden_of_TB/blob/main/report.html" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-tbBurgundy-950 text-white font-bold text-sm shadow-md hover:bg-tbBurgundy-900 transition-all flex items-center justify-center gap-2 whitespace-nowrap">
+                        <i class="fa-brands fa-github text-base"></i> View Project Report Page
+                    </a>
+                    <div class="relative w-full sm:w-auto">
                         <input type="text" id="reportSearch" onkeyup="filterReports()" placeholder="Search through files..." class="w-full sm:w-64 bg-white/50 text-tbBurgundy-950 pl-10 pr-4 py-2.5 rounded-xl border border-tbBurgundy-950/15 focus:outline-none focus:ring-1 focus:ring-tbOptimal-600 text-sm font-semibold">
                         <i class="fa-solid fa-search absolute left-3.5 top-3.5 text-tbBurgundy-950/50 text-xs"></i>
                     </div>
                 </div>
+            </div>
+
+            <!-- Featured Master Project Report Banner -->
+            <div class="bg-gradient-to-r from-tbBurgundy-900 to-tbBurgundy-950 text-white rounded-3xl p-6 md:p-8 mb-10 flex flex-col md:flex-row items-center justify-between shadow-lg relative overflow-hidden">
+                <!-- Abstract Glow -->
+                <div class="absolute -right-10 -top-10 w-40 h-40 rounded-full bg-tbOptimal-500 opacity-20 blur-2xl"></div>
+                <div class="mb-6 md:mb-0 max-w-2xl">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-tbOptimal-300 border border-tbOptimal-500/20 mb-3 uppercase tracking-wider">
+                        <i class="fa-solid fa-star mr-1.5"></i> Featured Compilation
+                    </span>
+                    <h3 class="text-xl md:text-2xl font-extrabold text-tbChampagne-100 mb-2">Compiled Project Report Page</h3>
+                    <p class="text-sm text-tbChampagne-200/90 leading-relaxed font-light">
+                        Explore the master project report detailing the full compilation of historical tuberculosis surveillance, county statistics, and strategic interventions. The host page includes analytical insights and complete visual models.
+                    </p>
+                </div>
+                <a href="https://github.com/Osoti-Osoti/the_burden_of_TB/blob/main/report.html" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 bg-tbOptimal-500 text-tbBurgundy-950 hover:bg-tbOptimal-400 font-extrabold text-sm rounded-xl tracking-wide uppercase transition-all shadow-md flex items-center gap-2 whitespace-nowrap">
+                    <i class="fa-brands fa-github text-base"></i> Open Project Report <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-0.5"></i>
+                </a>
             </div>
 
             <!-- Report Cards Grid -->
@@ -959,7 +980,7 @@
                     </div>
                     <div class="border-t border-tbBurgundy-950/10 pt-4 flex justify-between items-center mt-4">
                         <span class="text-xs text-tbBurgundy-900/60 font-semibold"><i class="fa-solid fa-calendar mr-1"></i>Jul 2021</span>
-                        <button onclick="openModal('modal-guidelines-tb')" class="px-4 py-2 text-xs font-extrabold text-tbBurgundy-950 hover:bg-white/40 bg-white/20 border border-tbBurgundy-950/10 rounded-lg transition-all">
+                        <button onclick="openModal('modal-guidelines-tb')" class="px-4 py-2 text-xs font-extrabold text-tbSage-300 hover:text-white bg-black/20 border border-white/10 rounded-lg hover:bg-white/10 transition-all">
                             View Summary <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[10px]"></i>
                         </button>
                     </div>
@@ -979,7 +1000,7 @@
                     </div>
                     <div class="border-t border-tbBurgundy-950/10 pt-4 flex justify-between items-center mt-4">
                         <span class="text-xs text-tbBurgundy-900/60 font-semibold"><i class="fa-solid fa-calendar mr-1"></i>Dec 2021</span>
-                        <button onclick="openModal('modal-kenya-tb-2021')" class="px-4 py-2 text-xs font-extrabold text-tbBurgundy-950 hover:bg-white/40 bg-white/20 border border-tbBurgundy-950/10 rounded-lg transition-all">
+                        <button onclick="openModal('modal-kenya-tb-2021')" class="px-4 py-2 text-xs font-extrabold text-tbSage-300 hover:text-white bg-black/20 border border-white/10 rounded-lg hover:bg-white/10 transition-all">
                             View Summary <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[10px]"></i>
                         </button>
                     </div>
@@ -1074,18 +1095,19 @@
                     <div class="w-8 h-8 rounded-lg bg-tbBurgundy-950 flex items-center justify-center text-tbOptimal-400 shadow-md">
                         <i class="fa-solid fas fa-lungs"></i>
                     </div>
-                    <span class="text-base font-extrabold tracking-tight text-tbBurgundy-950 block">THE BURDEN OF TB</span>
+                    <span class="text-base font-extrabold tracking-tight text-white block">THE BURDEN OF TB</span>
                 </a>
-                <p class="text-xs text-tbBurgundy-900/70 max-w-md text-center md:text-right font-semibold">
+                <p class="text-xs text-tbBurgundy-300/50 max-w-md text-center md:text-right font-semibold">
                     This portal compiles official datasets representing epidemiological and administrative outcomes. All key facts were extracted directly from authentic surveillance updates.
                 </p>
             </div>
 
-            <div class="border-t border-tbBurgundy-950/10 pt-8 flex flex-col sm:flex-row justify-between text-xs text-tbBurgundy-900/60 font-semibold">
+            <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between text-xs text-tbBurgundy-900/60 font-semibold">
                 <p>&copy; 2026 The Burden of TB Portal. Synthesized for Policy Planning.</p>
                 <div class="flex space-x-6 mt-4 sm:mt-0">
                     <a href="#dashboard" class="hover:text-black transition-colors">Overview Dashboard</a>
                     <a href="#reports" class="hover:text-black transition-colors">Reports Database</a>
+                    <a href="https://github.com/Osoti-Osoti/the_burden_of_TB/blob/main/report.html" target="_blank" rel="noopener noreferrer" class="hover:text-black transition-colors flex items-center gap-1"><i class="fa-brands fa-github text-sm"></i> Project Report Page</a>
                 </div>
             </div>
         </div>
